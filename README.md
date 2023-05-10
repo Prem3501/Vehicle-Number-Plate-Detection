@@ -1,4 +1,4 @@
-**Vehicle Number Plate Detection
+**Vehicle Number Plate Detection**
 
 Vehicle Number Plate Detection is a project that utilizes computer vision techniques to detect and extract license plates from static images. It provides an automated system for identifying vehicle number plates, which can be useful in various applications such as surveillance, traffic management, and law enforcement.
 
