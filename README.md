@@ -3,6 +3,7 @@
 Vehicle Number Plate Detection is a project that utilizes computer vision techniques to detect and extract license plates from static images. It provides an automated system for identifying vehicle number plates, which can be useful in various applications such as surveillance, traffic management, and law enforcement.
 
 **Features**
+
 Detects and extracts license plates from static images.
 Applies image preprocessing techniques to enhance the accuracy of license plate detection.
 Utilizes edge detection algorithms for identifying potential edges of license plates.
@@ -11,6 +12,7 @@ Applies optical character recognition (OCR) techniques to recognize the characte
 Supports popular image formats such as JPEG, PNG, and BMP.
 
 **Installation**
+
 Clone the repository:
 
 git clone https://github.com/Prem3501/Vehicle-Number-Plate-Detection.git
@@ -19,12 +21,15 @@ Run the main script:
 
 
 **python main.py**
+
 The detected license plates will be saved in the output_images directory, along with the recognized characters (if applicable).
 
-**Contributing**
+**Contributions**
+
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to submit a pull request or open an issue.
 
 **Acknowledgements**
+
 OpenCV - Open Source Computer Vision Library
 Tesseract OCR - Optical Character Recognition Engine
 Contact
