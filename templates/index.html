@@ -1,0 +1,38 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vehicle Number Plate Detection</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Vehicle Number Plate Detection</h1>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="image">
+                <br>
+                <input type="submit" value="Upload">
+            </form>
+            {% if prediction_text %}
+                <h2>{{ prediction_text }}</h2>
+                <div class="image-container">
+                    <h3>Original Image</h3>
+                    <img src="{{ url_for('static', filename='step_1.jpg') }}">
+                    <h3>Grayscale Image</h3>
+                    <img src="{{ url_for('static', filename='step_2.jpg') }}">
+                    <h3>Edged Image</h3>
+                    <img src="{{ url_for('static', filename='step_3.jpg') }}">
+                    <h3>Contours</h3>
+                    <img src="{{ url_for('static', filename='step_4.jpg') }}">
+                    <h3>Top 30 Contours</h3>
+                    <img src="{{ url_for('static', filename='step_5.jpg') }}">
+                    {% if 'not found' not in prediction_text %}
+                        <h3>Detected License Plate</h3>
+                        <img src="{{ url_for('static', filename='step_6.jpg') }}">
+                        <h3>Cropped Image</h3>
+                        <img src="{{ url_for('static', filename='cropped_image.jpg') }}">
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
